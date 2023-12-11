@@ -99,12 +99,14 @@ int main() { //starting point
 			cout << "Oh no! A jaguar is chasing you..  You can go in the (l)ake or (r)un into the trees" << endl;
 
 			cin >> input;
-			if (input == "l")
+			if (input == "l") {
 				cout << "You got to swim with the aquatic animals and had a good time! You bumped into your capy friend gort, maybe you can get answers." << endl;
-			room = 3;
-			if (input == "r")
+				room = 3;
+			}
+			if (input == "r") {
 				cout << "Thankfully you ate food and drank water you barely survived.. Your butterfly friend distracted the vicious jaguar" << endl;
-			room = 5;
+			
+			}room = 5;
 
 			break; 
 
@@ -192,10 +194,10 @@ int main() { //starting point
 
 		case 11:
 			system("color 09");
-			cout << "You have entered the cave, there are crystals everywhere, You can go (n)orth or (e)ast" << endl;
+			cout << "You have entered the cave, there are crystals everywhere, You can go (w)est or (e)ast" << endl;
 
 			cin >> input;
-			if (input == "n")
+			if (input == "w")
 				room = 10;
 			if (input == "e")
 				room = 12;
@@ -216,10 +218,10 @@ int main() { //starting point
 
 		case 13:
 			system("color 09");
-			cout << "The drawing looks like your friend Caplin Rous what could this mean? Your butterfly friend seems to be leading you through the cave. You can go (n)orth or (e)ast" << endl;
+			cout << "The drawing looks like your friend Caplin Rous what could this mean? Your butterfly friend seems to be leading you through the cave. You can go (w)est or (e)ast" << endl;
 
 			cin >> input;
-			if (input == "n")
+			if (input == "w")
 				room = 12;
 			if (input == "e")
 				room = 14;
@@ -228,10 +230,10 @@ int main() { //starting point
 
 		case 14:
 			system("color 09");
-			cout << "The butterfly went on the drawing of Caplin Rous, your memories came back. The floors began to glow showing you to go to the right path. You can go (n)orth or (e)ast" << endl;
+			cout << "The butterfly went on the drawing of Caplin Rous, your memories came back. The floors began to glow showing you to go to the right path. You can go (w)est or (e)ast" << endl;
 
 			cin >> input;
-			if (input == "n")
+			if (input == "w")
 				room = 13;
 			if (input == "e")
 				room = 15;
@@ -285,10 +287,10 @@ int main() { //starting point
 			cout << "What happened guys? You said" << endl;
 			cout << "Caplin entered the dimension to save us, we were in another world filled with crystals and strange creatures we have never seen." << endl;
 			cout << "This (c)rystal is for you " << YourName << endl;
-			cout << "You can go (s)outh or (n)orth" << endl;
+			cout << "You can go (s)outh or (e)ast" << endl;
 
 			cin >> input;
-			if (input == "w")
+			if (input == "s")
 				room = 17;
 			if (input == "e")
 				room = 19;
@@ -299,10 +301,10 @@ int main() { //starting point
 			system("color 7D");
 			cout << "Gort ! You say happily. You can go (s)outh or (n)orth" << endl;
 			cout << "I knew you could do it bud, go to the big crystal and put yours inside, Gort says" << endl;
-			cout << "You can go (s)outh or (n)orth" << endl; 
+			cout << "You can go (w)est or (n)orth" << endl; 
 
 			cin >> input;
-			if (input == "s")
+			if (input == "w")
 				room = 18;
 			if (input == "n")
 				room = 20;
